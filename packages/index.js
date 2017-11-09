@@ -3,10 +3,13 @@
  * Date: 17/11/9
  */
 import Button from './button/index.js';
-
+import Row from './row/index'
+import Col from './col/index'
 
 const components = [
-  Button
+  Button,
+  Row,
+  Col
 ];
 
 const install = function(Vue) {
@@ -20,5 +23,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Button
+  Button,
+  Row,
+  Col
 };

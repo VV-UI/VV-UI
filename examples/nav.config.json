@@ -12,8 +12,8 @@
       "path": "/component",
       "items": [{
         "desc": "Layout 布局",
-        "name": "button",
-        "path": "/button"
+        "name": "layout",
+        "path": "/layout"
       }, {
         "desc": "color 颜色",
         "name": "button",
