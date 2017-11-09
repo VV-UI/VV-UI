@@ -1,0 +1,77 @@
+:root {
+  /* Colors
+  -------------------------- */
+  --color-primary: #3FAAF5;
+
+  --color-success: #13ce66;
+  --color-warning: #f7ba2a;
+  --color-danger: #ff4949;
+  --color-info: #50bfff;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-extra-light-silver: color(var(--color-base-black) s(26%) l(80%));
+  --color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));
+  --color-light-black: color(var(--color-base-black) h(+5) s(27%) l(27%));
+  --color-extra-light-black: color(var(--color-base-black) h(+2) s(19%) l(35%));
+
+  /* Border
+ -------------------------- */
+  --border-width-base: 1px;
+  --border-style-base: solid;
+  --border-color-base: var(--color-extra-light-silver);
+  --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
+  --border-radius-base: 4px;
+  --border-radius-small: 2px;
+  --border-radius-circle: 100%;
+
+  /* Button
+  -------------------------- */
+  --button-font-size: 14px;
+  --button-border-radius: var(--border-radius-base);
+  --button-padding-vertical: 10px;
+  --button-padding-horizontal: 15px;
+
+  --button-large-font-size: 16px;
+  --button-large-padding-vertical: 11px;
+  --button-large-padding-horizontal: 19px;
+
+  --button-small-font-size: 12px;
+  --button-small-padding-vertical: 7px;
+  --button-small-padding-horizontal: 9px;
+
+  --button-mini-font-size: 12px;
+  --button-mini-padding-vertical: 4px;
+  --button-mini-padding-horizontal: 4px;
+
+  --button-default-color: var(--color-base-black);
+  --button-default-fill: var(--color-white);
+  --button-default-border: #c4c4c4;
+
+  --button-ghost-color: #666;
+  --button-ghost-fill: transparent;
+  --button-ghost-border: none;
+
+  --button-primary-border: var(--color-primary);
+  --button-primary-color: var(--color-white);
+  --button-primary-fill: var(--color-primary);
+
+  --button-success-border: var(--color-success);
+  --button-success-color: var(--color-white);
+  --button-success-fill: var(--color-success);
+
+  --button-warning-border: var(--color-warning);
+  --button-warning-color: var(--color-white);
+  --button-warning-fill: var(--color-warning);
+
+  --button-danger-border: var(--color-danger);
+  --button-danger-color: var(--color-white);
+  --button-danger-fill: var(--color-danger);
+
+  --button-info-border: var(--color-info);
+  --button-info-color: var(--color-white);
+  --button-info-fill: var(--color-info);
+
+  --button-hover-tint-percent: 20%;
+  --button-active-shade-percent: 10%;
+}

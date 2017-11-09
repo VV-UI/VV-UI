@@ -1,6 +1,6 @@
 <template>
   <div class="docs-demo-wrapper">
-      <div :style="{maxHeight: isExpand ? '500px' : '0'}" class="demo-container">
+      <div :style="{maxHeight: isExpand ? '700px' : '0'}" class="demo-container">
         <div span="14">
           <div class="docs-demo docs-demo--expand">
             <div class="highlight-wrapper">
@@ -9,7 +9,7 @@
           </div>
         </div>
       </div>
-    <span class="docs-trans docs-demo__triangle" @click="toggle">隐藏代码</span>
+    <span class="docs-trans docs-demo__triangle" @click="toggle">{{isExpand ? '隐藏代码' : '显示代码'}}</span>
   </div>
 </template>
 
@@ -19,7 +19,7 @@
   export default {
     data() {
       return {
-        isExpand: true
+        isExpand: false
       };
     },
     methods: {
@@ -43,6 +43,7 @@
     font-size: 14px;
     background-color: #F7F7F7;
     border: 1px solid #e2ecf4;
+    border-top: none;
     pre code {
       font-family: Consolas,Menlo,Courier,monospace;
       line-height: 22px;
@@ -62,7 +63,7 @@
   .docs-demo__code,
   .highlight-wrapper,
   .docs-demo__meta {
-    padding: 20px;
+    padding: 0 20px;
   }
 
   .docs-demo__code {

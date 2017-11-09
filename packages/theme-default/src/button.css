@@ -1,0 +1,160 @@
+@import "common/var.css";
+
+@b w {
+  @e button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: var(--button-default-fill);
+    border: var(--border-base);
+    color: var(--button-default-color);
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    border-radius: var(--border-radius-base);
+    padding: 12px 20px;
+    font-size: 14px;
+
+    &.is-round {
+       border-radius: 20px;
+     }
+    @m default {
+      background: var(--button-default-fill);
+      border: var(--border-base);
+      color: var(--button-default-color);
+      &:hover,
+      &:focus {
+         background: rgba(var(--color-primary), 0.05);
+         border-color: rgba(var(--color-primary), 0.8);
+         color: var(--color-primary);
+       }
+
+      &:active {
+         background: var(--color-white);
+         outline: none;
+       }
+      @when plain {
+        border: 1px solid var(--color-primary);
+        &:hover,
+        &:focus {
+           background: var(--color-white);
+           border-color: rgba(var(--color-primary), 0.8);
+           color: var(--color-primary);
+         }
+      }
+    }
+
+    @m primary{
+      background: var(--color-primary);
+      border: 1px solid var(--color-primary);
+      color: var(--color-white);
+      &:hover,
+      &:focus {
+         opacity: 0.7;
+       }
+      @when plain {
+        background: rgba(var(--color-primary), 0.05);
+        border-color: rgba(var(--color-primary), 0.8);
+        color: var(--color-primary);
+        &:hover,
+        &:focus {
+           opacity: 1;
+           background: var(--color-primary);
+           border: 1px solid var(--color-primary);
+           color: var(--color-white);
+         }
+      }
+    }
+
+    @m success {
+      background: var(--color-success);
+      border: 1px solid var(--color-success);
+      color: var(--color-white);
+      &:hover,
+      &:focus {
+         opacity: 0.7;
+       }
+      @when plain {
+        background: rgba(var(--color-success), 0.05);
+        border-color: rgba(var(--color-success), 0.8);
+        color: var(--color-success);
+        &:hover,
+        &:focus {
+           opacity: 1;
+           background: var(--color-success);
+           border: 1px solid var(--color-success);
+           color: var(--color-white);
+         }
+      }
+    }
+
+    @m info {
+      background: var(--color-info);
+      border: 1px solid var(--color-info);
+      color: var(--color-white);
+      &:hover,
+      &:focus {
+         opacity: 0.7;
+       }
+      @when plain {
+        background: rgba(var(--color-info), 0.05);
+        border-color: rgba(var(--color-info), 0.8);
+        color: var(--color-info);
+        &:hover,
+        &:focus {
+           opacity: 1;
+           background: var(--color-info);
+           border: 1px solid var(--color-info);
+           color: var(--color-white);
+         }
+      }
+    }
+
+    @m warning {
+      background: var(--color-warning);
+      border: 1px solid var(--color-warning);
+      color: var(--color-white);
+      &:hover,
+      &:focus {
+         opacity: 0.7;
+       }
+      @when plain {
+        background: rgba(var(--color-warning), 0.05);
+        border-color: rgba(var(--color-warning), 0.8);
+        color: var(--color-warning);
+        &:hover,
+        &:focus {
+           opacity: 1;
+           background: var(--color-warning);
+           border: 1px solid var(--color-warning);
+           color: var(--color-white);
+         }
+      }
+    }
+
+    @m danger {
+      background: var(--color-danger);
+      border: 1px solid var(--color-danger);
+      color: var(--color-white);
+      &:hover,
+      &:focus {
+         opacity: 0.7;
+       }
+      @when plain {
+        background: rgba(var(--color-danger), 0.05);
+        border-color: rgba(var(--color-danger), 0.8);
+        color: var(--color-danger);
+        &:hover,
+        &:focus {
+           opacity: 1;
+           background: var(--color-danger);
+           border: 1px solid var(--color-danger);
+           color: var(--color-white);
+         }
+      }
+    }
+  }
+}

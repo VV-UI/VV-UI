@@ -2,8 +2,8 @@
   <header class="page-header">
     <div class="header-container">
       <img src="../assets/img/logo.png" width="100">
+      <p>组件</p>
     </div>
-
   </header>
 </template>
 
@@ -33,6 +33,7 @@
       display: flex;
       align-items: center;
       height: 80px;
+      justify-content: space-between;
     }
   }
 </style>

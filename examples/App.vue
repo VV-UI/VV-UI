@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="less" type="text/less">
+  @import "./assets/less/index";
   .container{
     margin: 48px auto;
     width: 90%;
