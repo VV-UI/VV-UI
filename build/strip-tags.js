@@ -1,34 +1,21 @@
-/*!
- * strip-tags <https://github.com/jonschlinkert/strip-tags>
- *
- * Copyright (c) 2015 Jon Schlinkert, contributors.
- * Licensed under the MIT license.
+/**
+ * 转换成DOM字符串
  */
+const cheerio = require('cheerio')
 
-'use strict';
-
-var cheerio = require('cheerio');
-
-exports.strip = function(str, tags) {
-  var $ = cheerio.load(str, {decodeEntities: false});
+module.exports = (str, tags) => {
+  const $ = cheerio.load(str, { decodeEntities: false })
 
   if (!tags || tags.length === 0) {
-    return str;
+    return str
   }
 
-  tags = !Array.isArray(tags) ? [tags] : tags;
-  var len = tags.length;
+  tags = !Array.isArray(tags) ? [tags] : tags
+  let len = tags.length
 
   while (len--) {
-    $(tags[len]).remove();
+    $(tags[len]).remove()
   }
 
-  return $.html();
-};
-
-exports.fetch = function(str, tag) {
-  var $ = cheerio.load(str, {decodeEntities: false});
-  if (!tag) return str;
-
-  return $(tag).html();
-};
+  return $.html()
+}

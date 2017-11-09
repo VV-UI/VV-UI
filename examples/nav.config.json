@@ -1,10 +1,20 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
-  },
-  "exclude": [
-    "node_modules"
+  "开发指南": [
+    {
+      "name": "giud",
+      "path": "/giud",
+      "desc": "安装说明"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "基础组件",
+      "path": "/component",
+      "items": [{
+        "desc": "Button",
+        "name": "button",
+        "path": "/button"
+      }]
+    }
   ]
 }
