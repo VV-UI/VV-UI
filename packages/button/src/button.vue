@@ -8,7 +8,9 @@
     'w__button--size-'+size
     ]"
   >
-    <i v-if="icon !== ''" :class="icon"></i>
+    <i :class="icon" v-if="icon || $slots.icon">
+      <slot name="icon"></slot>
+    </i>
     <slot></slot>
   </button>
 </template>
