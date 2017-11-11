@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://at.aotu.io/">
-    <img width="100" src="./examples/components/assets/img/logo.png">
+    <img width="100" src="https://github.com/VV-UI/VV-UI/blob/master/examples/assets/img/logo.png">
   </a>
 </p>
 
