@@ -1,19 +1,3 @@
-<template>
-  <header class="page-header">
-    <div class="header-container">
-      <img src="../assets/img/logo.png" width="100">
-      <p>组件</p>
-    </div>
-  </header>
-</template>
-
-<script>
-  export default {
-    data () {
-      return {}
-    }
-  }
-</script>
 <style type="text/less" lang="less">
   @import "../assets/less/index";
   .page-header {
@@ -37,3 +21,19 @@
     }
   }
 </style>
+<template>
+  <header class="page-header">
+    <div class="header-container">
+      <img src="../assets/img/logo.png" width="100">
+      <p>组件</p>
+    </div>
+  </header>
+</template>
+
+<script>
+  export default {
+    data () {
+      return {}
+    }
+  }
+</script>

@@ -5,18 +5,21 @@
       <sideNav class="nav"></sideNav>
       <router-view class="view"></router-view>
     </div>
+    <mainFooter></mainFooter>
   </div>
 </template>
 
 <script>
 import mainHeader from './components/header.vue'
+import mainFooter from './components/footer.vue'
 import sideNav from './components/side-nav.vue'
 
 export default {
   name: 'app',
   components: {
     mainHeader,
-    sideNav
+    sideNav,
+    mainFooter
   }
 }
 </script>
