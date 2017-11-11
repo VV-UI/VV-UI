@@ -21,16 +21,16 @@
 
 ## 安装
 
-- 推荐使用 npm 安装
+- yarn
 
 ```bash
-npm install vv-ui
+yarn add vv-ui
 ```
 
-- 也可以使用 `<script>` 全局引用
+- npm 
 
-```html
-<script type="text/javascript" src="vv.min.js"></script>
+```bash
+npm install vv-ui -save
 ```
 
 ## 使用
