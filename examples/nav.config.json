@@ -4,6 +4,11 @@
       "name": "giud",
       "path": "/giud",
       "desc": "介绍"
+    },
+    {
+      "name": "index",
+      "path": "/",
+      "type": "pages"
     }
   ],
   "组件": [

@@ -16,6 +16,11 @@ let addComponent = (router) => {
       addComponent(route.items)
       routes = routes.concat(route.items)
     } else {
+      if (route.type === 'pages') {
+        route.component = r => require.ensure([], () =>
+          r(require(`../pages/${route.name}.vue`)))
+        return
+      }
       route.component = r => require.ensure([], () =>
         r(require(`../docs/${route.name}.md`)))
     }

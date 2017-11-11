@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <mainHeader></mainHeader>
-    <div class="container">
+    <div class="container" v-if="$route.name !== 'index'">
       <sideNav class="nav"></sideNav>
       <router-view class="view"></router-view>
     </div>
-    <mainFooter></mainFooter>
+    <router-view class="page" v-else></router-view>
+    <mainFooter v-if="$route.name !== 'index'"></mainFooter>
   </div>
 </template>
 
