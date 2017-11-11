@@ -24,6 +24,7 @@
 
 ::: demo
 ```html
+
 <w-row>
  <w-col :span="24"><div class="grid-content bg-purple-dark"></div></w-col>
 </w-row>
@@ -40,6 +41,7 @@
  <w-col :span="4"><div class="grid-content bg-purple"></div></w-col>
  <w-col :span="4"><div class="grid-content bg-purple-light"></div></w-col>
 </w-row>
+
 ```
 :::
 
@@ -60,12 +62,14 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 ::: demo
 
 ```html
+
 <w-row :gutter="20">
   <w-col :span="6"><div class="grid-content bg-purple"></div></w-col>
   <w-col :span="6"><div class="grid-content bg-purple"></div></w-col>
   <w-col :span="6"><div class="grid-content bg-purple"></div></w-col>
   <w-col :span="6"><div class="grid-content bg-purple"></div></w-col>
 </w-row>
+
 ```
 
 :::
@@ -95,6 +99,7 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 ::: demo
 
 ```html
+
 <w-row :gutter="20">
   <w-col :span="16"><div class="grid-content bg-purple"></div></w-col>
   <w-col :span="8"><div class="grid-content bg-purple"></div></w-col>
@@ -110,6 +115,7 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
   <w-col :span="16"><div class="grid-content bg-purple"></div></w-col>
   <w-col :span="4"><div class="grid-content bg-purple"></div></w-col>
 </w-row>
+
 ```
 
 :::
@@ -135,6 +141,7 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 ::: demo
 
 ```html
+
 <w-row :gutter="20">
   <w-col :span="6"><div class="grid-content bg-purple"></div></w-col>
   <w-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></w-col>
@@ -146,6 +153,7 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 <w-row :gutter="20" class="m-10">
   <w-col :span="12" :offset="6"><div class="grid-content bg-purple"></div></w-col>
 </w-row>
+
 ```
 
 :::
@@ -185,6 +193,7 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 ::: demo
 
 ```html
+
 <w-row type="flex" class="row-bg">
   <w-col :span="6"><div class="grid-content bg-purple"></div></w-col>
   <w-col :span="6"><div class="grid-content bg-purple-light"></div></w-col>
@@ -210,6 +219,7 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
   <w-col :span="6"><div class="grid-content bg-purple-light"></div></w-col>
   <w-col :span="6"><div class="grid-content bg-purple"></div></w-col>
 </w-row>
+
 ```
 
 :::
@@ -236,6 +246,7 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
   <w-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple"></div></w-col>
   <w-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div class="grid-content bg-purple-light"></div></w-col>
 </w-row>
+
 ```
 
 :::
