@@ -4,6 +4,7 @@
   "description": "vv-ui component default theme.",
   "main": "lib/index.css",
   "scripts": {
+    "dev": "gulp build && gulp watch",
     "build": "gulp build"
   },
   "keywords": [
