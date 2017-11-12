@@ -1,0 +1,17 @@
+@import "./common/var.css";
+
+@b w {
+  @e show-more {
+    font-size: 13px;
+    color: var(--color-black);
+    @m link {
+      color: var(--color-primary);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @m href {
+      color: var(--color-primary);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "./common/var.css";
+@b w{
+  @e limit {
+    @m textarea{
+      border: var(--limit-textarea-border);
+      display: block;
+      resize: vertical;
+      padding: 5px 7px;
+      line-height: 1.5;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: var(--limit-textarea-font);
+      color: var(--color-black);
+      border-radius: 4px;
+      outline: none;
+      transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+      &:focus {
+         border: var(--limit-textarea-border-focus);
+      }
+    }
+    @m over {
+      border: var(--limit-textarea-border-over)
+    }
+    @m text {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      font-size: 12px;
+      color: var(--color-base-gray);
+    }
+    @m num {
+      color: var(--color-success);
+    }
+    @m num-over {
+      color: var(--color-danger);
+    }
+  }
+}
