@@ -6,12 +6,16 @@ import Button from './button/index.js';
 import Row from './row/index'
 import Col from './col/index'
 import Tag from './tag/index'
+import ShowMore from './show-more/index'
+import LimitTextArea from './limit-textarea/index'
 
 const components = [
   Button,
   Row,
   Col,
-  Tag
+  Tag,
+  ShowMore,
+  LimitTextArea
 ];
 
 const install = function(Vue) {
@@ -28,5 +32,7 @@ export default {
   Button,
   Row,
   Col,
-  Tag
+  Tag,
+  ShowMore,
+  LimitTextArea
 };

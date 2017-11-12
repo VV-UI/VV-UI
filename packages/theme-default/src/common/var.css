@@ -150,6 +150,13 @@
   --radio-button-checked-color: var(--color-white);
   --radio-button-checked-border-color: var(--color-primary);
 
+  /* LimitTeaxtarea
+  ------------------------------------------*/
+  --limit-textarea-border: 1px solid var(--color-base-gray);
+  --limit-textarea-font: 14px;
+  --limit-textarea-border-focus: 1px solid var(--color-primary);
+  --limit-textarea-border-over: 1px solid var(--color-danger);
+
   /* Select
   -------------------------- */
   --select-border-color-hover: var(--border-color-hover);

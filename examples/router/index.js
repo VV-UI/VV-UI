@@ -27,11 +27,6 @@ let addComponent = (router) => {
   })
 }
 addComponent(routes)
-// routes.forEach((route) => {
-//   route.component = r => require.ensure([], () =>
-//     r(require(`../docs/${route.name}.md`)))
-// })
-console.log(routes)
 
 export default new Router({
   routes: routes

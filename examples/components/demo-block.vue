@@ -1,6 +1,6 @@
 <template>
   <div class="docs-demo-wrapper">
-      <div :style="{maxHeight: isExpand ? '700px' : '0'}" class="demo-container">
+      <div :style="{height: isExpand ? 'auto' : '0'}" class="demo-container">
         <div span="14">
           <div class="docs-demo docs-demo--expand">
             <div class="highlight-wrapper">
@@ -38,7 +38,7 @@
   }
   .docs-demo {
     width: 100%;
-    min-height: 60px;
+    height: auto;
     box-sizing: border-box;
     font-size: 14px;
     background-color: #F7F7F7;
@@ -64,6 +64,7 @@
   .highlight-wrapper,
   .docs-demo__meta {
     padding: 0 20px;
+    overflow-y: auto;
   }
 
   .docs-demo__code {
