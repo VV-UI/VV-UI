@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <mainHeader></mainHeader>
-    <div class="container" v-if="$route.name !== 'index'">
+    <div class="container" v-if="!isIndex">
       <sideNav class="nav"></sideNav>
       <router-view class="view"></router-view>
     </div>
     <router-view class="page" v-else></router-view>
-    <mainFooter v-if="$route.name !== 'index'"></mainFooter>
+    <mainFooter v-if="!isIndex"></mainFooter>
   </div>
 </template>
 
@@ -17,6 +17,16 @@ import sideNav from './components/side-nav.vue'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      isIndex: true
+    }
+  },
+  watch: {
+    $route () {
+      this.isIndex = this.$route.name === 'index'
+    }
+  },
   components: {
     mainHeader,
     sideNav,

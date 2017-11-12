@@ -5,11 +5,13 @@
 import Button from './button/index.js';
 import Row from './row/index'
 import Col from './col/index'
+import Tag from './tag/index'
 
 const components = [
   Button,
   Row,
-  Col
+  Col,
+  Tag
 ];
 
 const install = function(Vue) {
@@ -25,5 +27,6 @@ export default {
   install,
   Button,
   Row,
-  Col
+  Col,
+  Tag
 };
