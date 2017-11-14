@@ -25,22 +25,22 @@
 - yarn
 
 ```bash
-yarn add vv-ui
+yarn add vvui
 ```
 
 - npm 
 
 ```bash
-npm install vv-ui -save
+npm install vvui -save
 ```
 
 ## 使用
 
 ```js
-import VVUI from 'VVUI' // 引入组件库
-import 'VVUI/lib/index.css' // 引入样式库
+import VvUI from 'vvui' // 引入组件库
+import '../node_modules/VVUI/packages/theme-default/lib/index.css' // 引入样式库
 
-Vue.use(VVUI)
+Vue.use(VvUI)
 ```
 
 ## 贡献
