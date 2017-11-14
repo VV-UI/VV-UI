@@ -3,10 +3,20 @@
     <img width="200" src="https://github.com/VV-UI/VV-UI/blob/master/examples/assets/img/logo.png">
   </a>
 </p>
-
 # VV UI
 `VV-UI` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
 [演示地址](https://vv-ui.github.io/VV-UI)
+<p align="center">
+  <a href="https://github.com/feross/standard">
+    <img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="Standard - JavaScript Style">
+  </a>
+</p>
+<p align="center">
+<a href="https://www.npmjs.com/package/vue-meta-info"><img src="https://img.shields.io/badge/npm-1.0.0-brightgreen.svg" alt="npm version"></a> 
+  <img src="https://img.shields.io/badge/codecov-95.83%25%20-brightgreen.svg">
+  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+  <a href="https://www.npmjs.com/package/vue-meta-info"><img src="https://img.shields.io/badge/licence-MIT-blue.svg"></a> 
+</p>
 
 ## 特性
 
