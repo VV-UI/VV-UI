@@ -8,6 +8,7 @@ import Col from './col/index'
 import Tag from './tag/index'
 import ShowMore from './show-more/index'
 import LimitTextArea from './limit-textarea/index'
+import VueMetaInfo from './meta-info/index'
 
 const components = [
   Button,
@@ -21,6 +22,7 @@ const components = [
 const install = function(Vue) {
   if (install.installed) return;
   components.map(component => Vue.component(component.name, component));
+  VueMetaInfo.install(Vue);
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -34,5 +36,6 @@ export default {
   Col,
   Tag,
   ShowMore,
-  LimitTextArea
+  LimitTextArea,
+  VueMetaInfo
 };

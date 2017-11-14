@@ -44,6 +44,10 @@
         "desc": "Limit 限制输入域",
         "name": "limit-textarea",
         "path": "/limit"
+      }, {
+        "desc": "metaInfo 三要素",
+        "name": "meta-info",
+        "path": "/meta-info"
       }]
     }
   ]
