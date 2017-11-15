@@ -6,6 +6,9 @@
     color: #3F536E;
     background-color: #fff;
     z-index: 99;
+    .group-container{
+      margin-bottom: 32px;
+    }
     .side-nav-title{
       padding: 0 24px 8px;
       color: #8DABC4;
@@ -15,7 +18,6 @@
       text-transform: uppercase;
     }
     .side-nav-items{
-      margin: 0 0 32px;
       font-size: 14px;
       font-weight: normal;
       line-height: 1.8;
@@ -50,7 +52,7 @@
 </style>
 <template>
   <div class="side-nav">
-    <div v-for="title in (Object.keys(data))">
+    <div v-for="title in (Object.keys(data))" class="group-container">
       <p class="side-nav-title">{{title}}</p>
       <div class="side-nav-items" v-for="nav in data[title]" v-if="nav.desc">
         <router-link :class="$route.name===nav.name ? 'active' : ''" v-if="nav.name" :to="{name: nav.name}">{{nav.desc}}</router-link>
