@@ -8,6 +8,7 @@ import Col from './col/index'
 import Tag from './tag/index'
 import ShowMore from './show-more/index'
 import LimitTextArea from './limit-textarea/index'
+import Alert from './alert/index'
 
 const components = [
   Button,
@@ -15,7 +16,8 @@ const components = [
   Col,
   Tag,
   ShowMore,
-  LimitTextArea
+  LimitTextArea,
+  Alert
 ];
 
 const install = function(Vue) {
@@ -34,5 +36,6 @@ export default {
   Col,
   Tag,
   ShowMore,
-  LimitTextArea
+  LimitTextArea,
+  Alert
 };

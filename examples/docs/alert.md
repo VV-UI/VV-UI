@@ -1,0 +1,1 @@
+   <w-alert>默认按钮</w-alert>
