@@ -6,6 +6,15 @@
       "desc": "介绍"
     },
     {
+      "name": "install",
+      "path": "/install",
+      "desc": "安装"
+    },{
+      "name": "start",
+      "path": "/start",
+      "desc": "快速开始"
+    },
+    {
       "name": "index",
       "path": "/",
       "type": "pages"
