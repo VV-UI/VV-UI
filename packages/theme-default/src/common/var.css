@@ -17,6 +17,8 @@
   --color-warning: #f7ba2a;
   --color-danger: #ff4949;
   --color-info: #50bfff;
+  
+  --color-close: #b4bccc;  
 
   --color-secondary: color(var(--color-primary) s(99%) l(*0.9));
   --color-white: #fff;
