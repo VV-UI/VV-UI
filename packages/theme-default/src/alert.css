@@ -1,0 +1,71 @@
+@import "./common/var.css";
+
+@b w-alert {
+  padding: var(--alert-padding);
+  border-radius: var(--border-radius-base);
+  position: relative;
+  transition: opacity 0.2s;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+
+  @when center {
+    justify-content: center;
+  }
+
+  @m success {
+    color: var(--color-success) color(var(--color-success) a(0.1));
+  }
+  @m warning {
+    color: var(--color-warning) color(var(--color-warning) a(0.1));
+  }
+  @m info {
+    color: var(--color-info) color(var(--color-info) a(0.1));
+  }
+  @m error {
+    color: var(--color-danger) color(var(--color-danger) a(0.1));
+  }
+
+  @e icon {
+    font-size: var(--alert-icon-size);
+    width: var(--alert-icon-size);
+    @when big {
+      font-size: var(--alert-icon-large-size);
+      width: var(--alert-icon-large-size);
+    }
+  }
+  @e content {
+    padding: 0 8px;
+  }
+
+  @e title {
+    font-size: var(--alert-title-font-size);
+    line-height: 18px;
+    @when bold {
+      font-weight: bold;
+    }
+  }
+
+  @e closebtn {
+    font-size: var(--alert-close-font-size);
+    color: var(--color-close);
+    position: absolute 12px 15px * *;
+    cursor: pointer;
+    @when customed {
+      font-style: normal;
+      font-size: var(--alert-title-font-size);
+      top: 9px;
+    }
+  }
+
+  @e description {
+    font-size: var(--alert-title-font-size);
+    margin: 5px 0 0;
+    color: inherit;
+  }
+}
+
+.w-alert-fade-enter,
+.w-alert-fade-leave-active {
+  opacity: 0;
+}
