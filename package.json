@@ -1,9 +1,10 @@
 {
-  "name": "wue-ui",
+  "name": "vvui",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "monkeyWangs <2424880409@qq.com>",
-  "private": true,
+  "description": "This is a UI components for Vue 2.x ",
+  "author": "monkey-wang <2424880409@qq.com>",
+  "main": "packages/index.js",
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",

@@ -5,8 +5,20 @@
 </p>
 
 # VV UI
+
 `VV-UI` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
 [演示地址](https://vv-ui.github.io/VV-UI)
+
+<p align="center">
+  <a href="https://github.com/feross/standard">
+    <img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="Standard - JavaScript Style">
+  </a>
+</p>
+<p align="center">
+<a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/npm-1.0.0-brightgreen.svg" alt="npm version"></a> 
+  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+  <a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/licence-MIT-blue.svg"></a> 
+</p>
 
 ## 特性
 
@@ -25,22 +37,22 @@
 - yarn
 
 ```bash
-yarn add vv-ui
+yarn add vvui
 ```
 
 - npm 
 
 ```bash
-npm install vv-ui -save
+npm install vvui -save
 ```
 
 ## 使用
 
 ```js
-import VVUI from 'VVUI' // 引入组件库
-import 'VVUI/lib/index.css' // 引入样式库
+import VvUI from 'vvui' // 引入组件库
+import '../node_modules/VVUI/packages/theme-default/lib/index.css' // 引入样式库
 
-Vue.use(VVUI)
+Vue.use(VvUI)
 ```
 
 ## 贡献
