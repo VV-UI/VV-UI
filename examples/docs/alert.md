@@ -1,8 +1,6 @@
 <style>
-.dome-alert{
-  .w-alert:not(:first-child){
-    margin-top: 10px;
-  }
+.dome-alert .w-alert:not(:first-child){
+  margin-top: 10px;
 }
 </style>
 <script>
