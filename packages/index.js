@@ -9,6 +9,7 @@ import WTag from './tag/index'
 import WShowMore from './show-more/index'
 import WLimitTextArea from './limit-textarea/index'
 import MetaInfo from './meta-info/index'
+import WAlert from './alert/index'
 
 const components = [
   WButton,
@@ -16,7 +17,8 @@ const components = [
   WCol,
   WTag,
   WShowMore,
-  WLimitTextArea
+  WLimitTextArea,
+  WAlert
 ];
 
 const install = function(Vue) {
@@ -37,5 +39,6 @@ export default {
   WTag,
   WShowMore,
   WLimitTextArea,
-  MetaInfo
+  MetaInfo,
+  WAlert
 };
