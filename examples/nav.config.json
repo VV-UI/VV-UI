@@ -6,6 +6,16 @@
       "desc": "介绍"
     },
     {
+      "name": "install",
+      "path": "/install",
+      "desc": "安装"
+    },
+    {
+      "name": "start",
+      "path": "/start",
+      "desc": "快速开始"
+    },
+    {
       "name": "index",
       "path": "/",
       "type": "pages"
@@ -51,6 +61,11 @@
           "desc": "Limit 限制输入域",
           "name": "limit-textarea",
           "path": "/limit"
+        },
+        {
+          "desc": "metaInfo 三要素",
+          "name": "meta-info",
+          "path": "/meta-info"
         },
         {
           "desc": "alert 警告",
