@@ -1,5 +1,6 @@
 <template>
   <button
+    @click="$emit('click')"
     class="w__button"
     :disabled="disabled"
     :class="[

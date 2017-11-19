@@ -71,6 +71,11 @@
           "desc": "alert 警告",
           "name": "alert",
           "path": "/alert"
+        },
+        {
+          "desc": "LoadingBar 加载进度条",
+          "name": "loading-bar",
+          "path": "/loadingBar"
         }
       ]
     }

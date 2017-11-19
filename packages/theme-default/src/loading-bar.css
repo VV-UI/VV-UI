@@ -1,0 +1,49 @@
+@import "./common/var.css";
+@b w {
+  @e loading-bar {
+    @m bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      z-index: 9999;
+      transition: all 200ms ease;
+      transform: translate3d(-100%, 0, 0);
+      background: var(--color-primary);
+    }
+    @m error {
+      background: var(--color-danger)
+    }
+    @m peg {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 100px;
+      height: 100%;
+      box-shadow: 0 0 10px #ffdc00, 0 0 5px #ffdc00;
+      opacity: 1.0;
+      transform: rotate(3deg) translate(0px,-4px);
+    }
+    @m spinner {
+      display: block;
+      position: fixed;
+      z-index: 1031;
+      top: 15px;
+      right: 15px;
+      .spinner-icon{
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        border: solid 2px transparent;
+        border-top-color: var(--color-primary);
+        border-left-color: var(--color-primary);
+        border-radius: 50%;
+      }
+      .spinner-icon--error{
+        border-top-color: var(--color-danger);
+        border-left-color: var(--color-danger);
+      }
+    }
+  }
+}
