@@ -76,6 +76,11 @@
           "desc": "LoadingBar 加载进度条",
           "name": "loading-bar",
           "path": "/loadingBar"
+        },
+        {
+          "desc": "skeleton 骨架屏",
+          "name": "skeleton",
+          "path": "/skeleton"
         }
       ]
     }
