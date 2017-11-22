@@ -32,7 +32,7 @@ inquirer.prompt([{
   rm -rf index.html && 
   rm -rf static && 
   cd dist && 
-  mv * ../
+  mv * ../ &&
   rm -rf ./dist && 
   git add . && 
   git commit -m '${answers.message}' &&
