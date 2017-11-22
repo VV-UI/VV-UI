@@ -26,21 +26,40 @@ inquirer.prompt([{
   type: 'input',
   default: ''
 }]).then(function (answers) {
-  let build = answers.conform ? 'npm run build &&' : '';
-  var cmd = `${build} 
-  git checkout gh-pages && 
-  rm -rf index.html && 
+  let buildCmd = 'npm run build';
+  let checkoutCmd = 'git checkout gh-pages';
+  let updateCmd = `rm -rf index.html && 
   rm -rf static && 
   cd dist && 
   mv * ../ &&
   rm -rf ./dist && 
-  cd .. &&
+  cd .. `;
+  let publishCmd = `
   git add . && 
   git commit -m '${answers.message}' &&
   git push`;
-  console.log(cmd)
-
-  exec(cmd);
+  if (answers.conform) {
+    console.log(chalk.yellow('\n 正在编译... \n'));
+    if (exec(buildCmd).code !== 0) {
+      console.log(chalk.red('\n 编译失败 \n'));
+      return;
+    }
+  }
+  console.log(chalk.yellow('\n 正在切换到发布分支... \n'));
+  if (exec(checkoutCmd).code !== 0) {
+    console.log(chalk.red('\n 切换分支失败 \n'));
+    return;
+  }
+  console.log(chalk.yellow('\n 正在更新文件... \n'));
+  if (exec(updateCmd).code !== 0) {
+    console.log(chalk.red('\n 更新文件失败 \n'));
+    return;
+  }
+  console.log(chalk.yellow('\n 正在发布... \n'));
+  if (exec(publishCmd).code !== 0) {
+    console.log(chalk.red('\n 发布失败 \n'));
+    return;
+  }
 
   console.log();
   console.log(chalk.green(`   发布成功 ) `));
