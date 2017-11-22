@@ -34,6 +34,7 @@ inquirer.prompt([{
   cd dist && 
   mv * ../ &&
   rm -rf ./dist && 
+  cd .. &&
   git add . && 
   git commit -m '${answers.message}' &&
   git push`;
