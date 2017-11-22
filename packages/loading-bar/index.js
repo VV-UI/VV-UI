@@ -42,8 +42,8 @@ LoadingBarConstructor.prototype.start = function () {
 LoadingBarConstructor.prototype.end = function () {
   timer || this.init()
   this.totalProgress = 100
+  clearTimeout(timer)
   setTimeout(() => {
-    timer = null
     document.body.removeChild(this.vm.$el)
   }, 200)
 }
