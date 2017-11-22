@@ -61,9 +61,6 @@
 <w-button @click="error">错误</w-button>
 <script>
   export default{
-    mounted () {
-      
-    },
     methods: {
       start () {
         this.$loading.start()
