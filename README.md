@@ -15,7 +15,7 @@
   </a>
 </p>
 <p align="center">
-<a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/npm-1.0.2-brightgreen.svg" alt="npm version"></a> 
+<a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/npm-1.0.4-brightgreen.svg" alt="npm version"></a> 
   <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/licence-MIT-blue.svg"></a> 
 </p>
