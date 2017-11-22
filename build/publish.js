@@ -10,7 +10,7 @@ var chalk = require('chalk');
 
 inquirer.prompt([{
   name: 'conform',
-  message: `确定要发布到线上？`,
+  message: `是否需要重新构建？`,
   type: 'list',
   default: 0,
   choices: [{
@@ -20,17 +20,24 @@ inquirer.prompt([{
     name: '否',
     value: 0
   }]
+}, {
+  name: 'message',
+  message: '版本发布说明',
+  type: 'input',
+  default: ''
 }]).then(function (answers) {
-  if (answers.conform) {
-    return;
-  }
-  var cmd = `npm run build && 
+  let build = answers.conform ? 'npm run build &&' : '';
+  var cmd = `${build} 
   git checkout gh-pages && 
   rm -rf index.html && 
   rm -rf static && 
   cd dist && 
   mv * ../
-  rm -rf dist`
+  rm -rf ./dist && 
+  git add . && 
+  git commit -m ${answers.message} &&
+  git push`;
+  console.log(cmd)
 
   exec(cmd);
 
