@@ -22,6 +22,7 @@ LoadingBarConstructor.prototype.config = function (options) {
 }
 
 LoadingBarConstructor.prototype.init = function () {
+  clearTimeout(timer)
   this.totalProgress = 0
   this.isError = false
   this.vm = this.$mount()
