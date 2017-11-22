@@ -7,7 +7,7 @@ import LoadingBar from './src/loading-bar.vue'
 
 let LoadingBarConstructor = Vue.extend(LoadingBar)
 
-let timer = null
+let timer = null, removeTimer = null
 
 let WLoadingBar = () => {
   return new LoadingBarConstructor()
@@ -42,8 +42,10 @@ LoadingBarConstructor.prototype.start = function () {
 LoadingBarConstructor.prototype.end = function () {
   timer || this.init()
   this.totalProgress = 100
-  clearTimeout(timer)
-  setTimeout(() => {
+  clearTimeout(removeTimer)
+  removeTimer = setTimeout(() => {
+    clearTimeout(timer)
+    timer = null
     document.body.removeChild(this.vm.$el)
   }, 200)
 }
