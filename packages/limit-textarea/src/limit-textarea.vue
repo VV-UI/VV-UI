@@ -62,7 +62,8 @@
           this.num = this.maxLen - this.currentValue.length
         } else {
           if (this.isCut) {
-            this.currentValue = this.currentValue.substring(0, this.currentValue.length - 1)
+            this.currentValue = this.currentValue.substring(0, this.maxLen)
+            this.num = this.currentValue.length - this.maxLen
             return
           }
           this.isOver = true
