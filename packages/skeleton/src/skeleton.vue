@@ -1,5 +1,5 @@
 <template>
-  <div class="w__skeleton">
+  <div class="w__skeleton" :style="{background: bgColor, paddingBottom, width}">
   </div>
 </template>
 
@@ -7,10 +7,27 @@
   export default{
     name: 'WSkeleton',
     props: {
-      proportion: '1' // w : h
+      proportion: {
+        type: Number,
+        default: 1
+      }, // h : w
+      bgColor: {
+        type: String,
+        default: '#b4bccc'
+      },
+      width: {
+        type: String,
+        default: '100%'
+      },
+      height: {
+        type: [String, Boolean],
+        default: false
+      }
     },
     data () {
-      return {}
+      return {
+          paddingBottom: this.height || `${this.proportion * 100}%`
+      }
     }
   }
 </script>

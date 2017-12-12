@@ -25,6 +25,7 @@
     "markdown-it-container": "^2.0.0",
     "moment": "^2.19.2",
     "path": "^0.12.7",
+    "prerender-spa-plugin": "^2.1.0",
     "semver": "^5.4.1",
     "transliteration": "^1.6.2",
     "vue": "^2.5.2",
