@@ -11,6 +11,7 @@ import WLimitTextArea from './limit-textarea/index'
 import MetaInfo from './meta-info/index'
 import WAlert from './alert/index'
 import WLoadingBar from './loading-bar/index'
+import Skeleton from './skeleton/index'
 
 const components = [
   WButton,
@@ -19,7 +20,8 @@ const components = [
   WTag,
   WShowMore,
   WLimitTextArea,
-  WAlert
+  WAlert,
+  Skeleton
 ]
 
 const install = function(Vue) {
@@ -43,5 +45,6 @@ export default {
   WLimitTextArea,
   MetaInfo,
   WAlert,
-  WLoadingBar
+  WLoadingBar,
+  Skeleton
 }

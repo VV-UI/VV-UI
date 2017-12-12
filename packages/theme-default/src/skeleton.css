@@ -1,0 +1,7 @@
+@b w {
+  @e skeleton {
+    width: 100%;
+    height: 0;
+    animation: w-opacity 2s infinite linear;
+  }
+}
