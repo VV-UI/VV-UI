@@ -43,7 +43,7 @@ yarn add vvui
 - npm 
 
 ```bash
-npm install vvui -save
+npm install vvui --save
 ```
 
 ## 使用
