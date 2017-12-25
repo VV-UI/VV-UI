@@ -50,7 +50,7 @@ npm install vvui --save
 
 ```js
 import VvUI from 'vvui' // 引入组件库
-import '../node_modules/VVUI/packages/theme-default/lib/index.css' // 引入样式库
+import 'vvui/packages/theme-default/lib/index.css' // 引入样式库
 
 Vue.use(VvUI)
 ```
