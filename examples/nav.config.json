@@ -68,6 +68,11 @@
           "path": "/limit"
         },
         {
+          "desc": "Limit 限制输入框",
+          "name": "limit-input",
+          "path": "/limit-input"
+        },
+        {
           "desc": "metaInfo 三要素",
           "name": "meta-info",
           "path": "/meta-info"

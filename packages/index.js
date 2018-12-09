@@ -8,6 +8,7 @@ import WCol from './col/index'
 import WTag from './tag/index'
 import WShowMore from './show-more/index'
 import WLimitTextArea from './limit-textarea/index'
+import WLimitInput from './limit-input/index'
 import MetaInfo from './meta-info/index'
 import WAlert from './alert/index'
 import WLoadingBar from './loading-bar/index'
@@ -19,6 +20,7 @@ const components = [
   WTag,
   WShowMore,
   WLimitTextArea,
+  WLimitInput,
   WAlert
 ]
 
@@ -41,6 +43,7 @@ export default {
   WTag,
   WShowMore,
   WLimitTextArea,
+  WLimitInput,
   MetaInfo,
   WAlert,
   WLoadingBar
