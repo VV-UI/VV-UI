@@ -4,8 +4,8 @@
 Limit 可以控制用户输入的字/字符数，```get-by-type``` 指定初始限制字/字符
 <div class="demo-block">
   <w-limit-input
+    v-model="inputValue"
     :input-width="200"
-    :input-value.sync="inputValue"
     :holder="'请输入'"
     :get-by-type="'word'"
     :max-length="10">
@@ -16,9 +16,9 @@ Limit 可以控制用户输入的字/字符数，```get-by-type``` 指定初始�
 ```html
 
 <w-limit-input
+  v-model="inputValue"
   :input-width="200"
-  :input-value.sync="inputValue"
-  :holder="'请输入详细地址'"
+  :holder="'请输入'"
   :get-by-type="'word'"
   :max-length="10">
 </w-limit-input>
@@ -30,8 +30,7 @@ Limit 可以控制用户输入的字/字符数，```get-by-type``` 指定初始�
 export default {
   data() {
     return {
-      inputValue: '',
-
+      inputValue: ''
     };
   }
 }

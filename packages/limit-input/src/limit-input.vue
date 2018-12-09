@@ -29,8 +29,8 @@
   export default {
     name: "WLimitInput",
     props: {
-      inputValue: {// 传入 input value
-        type: String,
+      value: {
+        type: [String, Number],
         default: ''
       },
 
@@ -62,7 +62,6 @@
       }
     },
     methods: {
-
       /**
        * 输入
        */
@@ -78,28 +77,39 @@
           that.itemValue= temp.trim()
           that.inputNum = strLength.getByteLen(that.itemValue);
         }
-        that.$emit('update:inputValue',that.itemValue)
+        that.$emit('input',that.itemValue)
         that.$forceUpdate();
       },
+
+      /**
+       * 设置输入字/字符个数
+       */
+      setNum(newData) {
+        const that = this
+        that.itemValue = newData;
+        if (that.getByType == 'word') {
+          that.inputNum = strLength.getZhLen(newData)
+        }else {
+          that.inputNum = strLength.getByteLen(that.itemValue);
+        }
+      }
     },
     watch: {
       maxLength: function(newData,oldData){
         const that = this;
         that.limitLength = newData
       },
-      inputValue: function(newData,oldData){
-        const that = this;
-        that.itemValue = newData
-        that.inputNum = strLength.getZhLen(that.itemValue)
-      },
 
+      value: function(newData,oldData){
+        const that = this;
+        that.setNum(newData);
+      },
     },
     /* 接收数据 */
     mounted(){
       const that = this;
       that.limitLength = that.maxLength;
-      that.itemValue = that.inputValue || '';
-      that.inputNum = strLength.getZhLen(that.inputValue);
+      that.setNum(that.value);
     },
   }
 </script>
